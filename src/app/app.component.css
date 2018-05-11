@@ -1,0 +1,47 @@
+.divdetails{
+   background-color: #ffccdd;
+}
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+nav {
+    float: left;
+    max-width: 165px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+	padding: 0;
+	
+}
+   
+nav ul a {
+	text-decoration: none;
+	border-style:solid;
+	border-width:1px;
+	border-color:#b0b581;
+	color:#b0b581;
+	background-color: #2a323a;
+	border-radius:4px;
+	padding: 5px;
+}
+li{
+	margin-bottom: 15px;
+}
+.frame {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}

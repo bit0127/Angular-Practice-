@@ -1,0 +1,44 @@
+<p>
+  new-cmp works!
+  {{newcomponent | lowercase}}
+</p>
+<div> Months :
+   <select (change) = "changemonths($event.target.value)">
+      <option *ngFor="let i of months" [value]="i">{{i}}</option>
+   </select>
+</div>
+<div><span appChangeText>
+</span></div>
+
+<div>
+  Json Data
+  <ul>
+    <li>Mango</li>
+    <li>Orange</li>
+    <li>{{httpdata|json}}</li>
+  </ul>
+    <!-- <ul *ngFor = "let data of httpdata">
+        <li>Name : {{data.name}} Address: {{data.address.city}}</li>
+     </ul> -->
+</div>
+
+<div>Date : {{todaysDate| date:'yyyy-MM-dd'}}</div>
+<div>Json : {{jsonval| json}}</div>
+<div>Currency : {{1101.567| currency:"BDT":true}}</div>
+<div>Decimal Pipe : {{1101.56753783278| number:'.3-5'}}</div>
+<h1>Slice Pipe</h1> <b>{{months | slice:2:6}}</b>
+<h1>Percent Pipe</h1><b>{{0.54565| percent}}</b>
+<h1>Custom Pipe</h1>
+<p> Square Root of 100 :{{ 100 | sqrtPipe}} <p>
+
+  <span>{{months}}</span>
+
+<div>
+<span *ngIf="isavailable; else condition1">Checking Condition</span>
+<ng-template #condition1>Invalid Condition</ng-template>
+</div>
+<button (click)="jsondataParser($event)">Click me</button>
+<h1>
+<marquee>dGIC Corporation</marquee>
+</h1>
+
